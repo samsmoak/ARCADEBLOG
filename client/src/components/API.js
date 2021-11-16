@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-	baseURL: `https://arcadeiblog.herokuapp.com/api/`,
+	baseURL: `https://arcadeblog.herokuapp.com/`,
 	withCredentials: false,
 	headers: {
 		"Access-Control-Allow-Origin": "*",
