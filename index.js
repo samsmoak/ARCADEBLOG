@@ -50,11 +50,11 @@ app.use("/api/categories", categoryRoute);
 // if (process.env.NODE_ENV === "production") {
 app.use(express.static(path.join(__dirname, "/client/build")));
 app.get("*", (req, res) => {
-	res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+	res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 // }
 
-app.listen(process.env.PORT || "8000", () => {
+app.listen(process.env.PORT || "5000", () => {
 	console.log("Backend is running");
 });
 // /Users/samsmoaki/Desktop/tailwind projects/blogapp/api/config.env
