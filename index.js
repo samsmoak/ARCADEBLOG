@@ -11,15 +11,12 @@ const multer = require("multer");
 const cors = require("cors");
 const path = require("path");
 
-app.use(
-	cors({
-		origin: "*",
-	})
-);
-app.use(function (req, res, next) {
-	res.header("Access-Control-Allow-Origin", "*");
-	next();
-});
+// app.use(
+// 	cors({
+// 		origin: "*",
+// 	})
+// );
+//
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 dotenv.config();
