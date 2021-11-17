@@ -54,7 +54,7 @@ if (process.env.NODE_ENV === "production") {
 	});
 }
 
-app.listen(process.env.PORT || "5000", "0.0.0.0", () => {
+app.listen(process.env.PORT || "5000", () => {
 	console.log("Backend is running");
 });
 // /Users/samsmoaki/Desktop/tailwind projects/blogapp/api/config.env

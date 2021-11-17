@@ -19,7 +19,7 @@ function Write() {
 		};
 		if (file) {
 			const data = new FormData();
-			const filename = Date.now() + File.name;
+			const filename = Date.now() + File.name + ".jpeg";
 			data.append("name", filename);
 			data.append("file", file);
 			newPost.photo = filename;
